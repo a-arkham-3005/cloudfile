@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".QuotaFragment">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/plan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plan1" />
+
+        <RadioButton
+            android:id="@+id/plan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plan2" />
+
+        <RadioButton
+            android:id="@+id/plan3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plan3" />
+
+        <RadioButton
+            android:id="@+id/plan4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plan4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/buy"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
